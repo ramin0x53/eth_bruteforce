@@ -12,7 +12,7 @@ import (
 func options() {
 	flag.StringVar(&config.Filename, "f", "", "wordlist")
 	flag.StringVar(&config.Apikey, "api", "", "api key")
-	flag.IntVar(&config.Threadnum, "t", 50, "threads count")
+	flag.IntVar(&config.Threadnum, "t", 50, "threads number")
 	flag.Parse()
 	fmt.Println(config.Filename)
 	fmt.Println(config.Apikey)
